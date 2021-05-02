@@ -33,15 +33,27 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = ".YuButton-module_button__1QH5E {\n  margin: 10px;\n  border-radius: 10px;\n  padding: 10px;\n  font-size: 20px;\n}\n";
+var css_248z$2 = ".YuButton-module_button__1QH5E {\n  margin: 10px;\n  border-radius: 10px;\n  padding: 10px;\n  font-size: 20px;\n}\n";
 var styleModule$1 = {"button":"YuButton-module_button__1QH5E"};
-styleInject(css_248z$1);
+styleInject(css_248z$2);
 
 var YuButton = function YuButton(_ref) {
   var _ref$text = _ref.text,
       text = _ref$text === void 0 ? 'click me' : _ref$text;
   return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("button", {
     className: styleModule$1.button
+  }, text));
+};
+
+var css_248z$1 = ".ButtonEclipse-module_button__2hMnK {\n  height: 5vmin;\n  width: 5vmin;\n  margin: 10px;\n  border-radius: 50%;\n  font-size: 20px;\n}\n";
+var style = {"button":"ButtonEclipse-module_button__2hMnK"};
+styleInject(css_248z$1);
+
+var ButtonEclipse = function ButtonEclipse(_ref) {
+  var _ref$text = _ref.text,
+      text = _ref$text === void 0 ? '+' : _ref$text;
+  return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("button", {
+    className: style.button
   }, text));
 };
 
@@ -64,6 +76,7 @@ var YuCard = function YuCard(_ref) {
 var components = function components() {
   return {
     YuButton: YuButton,
+    ButtonEclipse: ButtonEclipse,
     YuCard: YuCard
   };
 };
