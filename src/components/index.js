@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-import YuButton from './YuButton/YuButton.jsx';
 import ButtonEclipse from './00_ButtonEclipse/ButtonEclipse.jsx';
-import YuCard from './YuCard/YuCard.jsx';
+import YuButton from './01_YuButton/YuButton.jsx';
+import YuCard from './02_YuCard/YuCard.jsx';
 
 const components = () => {
   return {

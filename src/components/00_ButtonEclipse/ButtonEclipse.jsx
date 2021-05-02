@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './ButtonEclipse.module.css';
+import style from './ButtonEclipse.module.scss';
 
 const ButtonEclipse = ({ text = '+' }) => {
   return (
